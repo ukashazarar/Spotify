@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="pass">
+                <div class="logo"><img width="45px" src="image/logo.svg" alt="logo"></div>
+                <div class="home"><img class="homes" src="image/homeIcon.svg" alt="homeIcon"></div>
+                <div class="searchbar">
+                    <img class="search" src="image/searchIcon.svg" alt="searchIcon">
+                    <input id="text" class="text" type="text" placeholder="Enter What you want to play">
+                </div>
+
+            </div>
+
+            <div class="sing">
+                <div class="singup"><b>Sing up</b></div>
+                <div class="singin"><b>Log in</b></div>
+            </div>
+        </div>
+
+        <div class="sec1">
+            <div class="left">
+                <div class="library">
+                    <div class="lab"><b>Your library</b></div>
+                    <div class="plus">+</div>
+                </div>
+                <div class="media-sing">
+                    <div class="singup"><b>Sing up</b></div>
+                    <div class="singin"><b>Log in</b></div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <h3>Create your first playlist</h3>
+                        <p>Its easy, we will help you</p>
+                        <button>Create playlist</button>
+                    </div>
+
+
+                    <div class="card2">
+                        <h3>Let's find some podcasts to follow</h3>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="cookies">
+                    <ul>
+                        <li><a href="Legal">Legal</a></li>
+                        <li><a href="Privacy and security">Privacy and security</a></li>
+                        <li><a href="Cookies">Cookies</a></li>
+                        <li><a href="About us">About us</a></li>
+                        <li><a href="Acessibility">Acessibility</a></li>
+
+                    </ul>
+                    <button class="lang"> <img width="23" src="image/languageIcon.svg" alt=""> English</button>
+
+
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="right-nav">
+                    <div class="trend">Trending Songs</div>
+                    <img class="ham-burger" src="image/Hamburger.svg" alt="">
+                </div>
+                <div class="songs-scroll-wrapper">
+                    <!-- <button class="scroll-btn left" onclick="scrollLeft()"> -->
+                    <!-- <img class="left-arrow" src="arrow-leftIcon.svg" alt=""> -->
+                    </button>
+
+                    <div class="trending" id="song-scroll">
+                        <div class="songs" data-src="songs/song1.mp3">
+
+                            <div class="play-btn"><img src="image/playButtonIcon.svg" alt=""></div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02a7e251b543c77a6ed356dfbe" alt="">
+                            <h3>Saiyaara (From "Saiyaara")</h3>
+                            <p>Tanishk Bagchi , Faheem Abdullah , Arslan Nizami , Irshad Kamil</p>
+                        </div>
+
+                        <div class="songs" data-src="songs/song2.mp3">
+                            <div class="play-btn"><img src="image/playButtonIcon.svg" alt=""></div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="">
+                            <h3>Sapphire</h3>
+                            <p>Ed Sheeran</p>
+                        </div>
+
+
+                        <div class="songs" data-src="songs/song3.mp3">
+                            <div class="play-btn"><img src="image/playButtonIcon.svg" alt=""></div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c" alt="">
+                            <h3>Shaky</h3>
+                            <p>Sanju Rathod ,G-SPXRK</p>
+                        </div>
+
+
+                        <div class="songs" data-src="songs/song4.mp3">
+                            <audio src="songs/song4.mp3"></audio>
+                            <div class="play-btn"><img src="image/playButtonIcon.svg" alt=""></div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02c43c9a46474ceda8332fa723" alt="">
+                            <h3>Chikitu (From "Coolie") (Tamil)</h3>
+                            <p>Anirudh Ravichander , T.Rajender , Arivu</p>
+                        </div>
+
+
+                        <div class="songs" data-src="songs/song5.mp3">
+                            <div class="play-btn"><img src="image/playButtonIcon.svg" alt=""></div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e0248fd857d9e690f680c73fa93" alt="">
+                            <h3>On My Mind</h3>
+                            <p>Alex Warren , ROSE</p>
+                        </div>
+
+                        <!-- <button class="scroll-btn right" onclick="scrollRight()"> -->
+                        <!-- <img class="right-arrow" src="arrow-rightIcon.svg" alt=""> -->
+                        </button>
+                    </div>
+                </div>
+                <div class="play-bar">
+                    <div id="now-playing">🎵 No song playing</div>
+
+                    <div class="controls">
+                        <img src="image/previousIcon.svg" alt="Previous" id="prev-btn">
+                        <img src="image/playIcon.svg" alt="Play/Pause" id="play-pause-btn">
+                        <img src="image/nextIcon.svg" alt="Next" id="next-btn">
+                    </div>
+
+                    <input type="range" id="progress-bar" value="0" min="0" max="100">
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <audio id="audio-player" style="display:none;"></audio>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
